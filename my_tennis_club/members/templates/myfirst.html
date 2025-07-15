@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Django Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB;
+            color: #1F2937;
+            margin: 0;
+            line-height: 1.6;
+            }
+            .container {
+                background-image: linear-gradient(to right, #059669, #0d9488);
+                color: #ffffff;
+                padding: 3rem 1rem;
+                text-align: center;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            }
+            .container h1 {
+                font-size: 2.25rem;
+                font-weight: 700;
+                letter-spacing: -0.025em;
+            }
+            .container2 {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2.5rem 1.5rem;
+                max-width: 1280px;
+                margin: 0 auto;
+            }
+            .div1, .div2, .div3, .div4, .div5, .div6 {
+                background-color: #ffffff;
+                border-radius: 0.75rem;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                overflow: hidden;
+                padding: 2rem;
+                transition: transform 0.3s ease-in-out;
+            }
+            .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover {
+                transform: scale(1.05);
+            }
+            .div1 h1, .div2 h1, .div3 h1, .div4 h1, .div5 h1, .div6 h1 {
+                color: #059669;
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+
+            .div1 p, .div2 p, .div3 p, .div4 p, .div5 p, .div6 p {
+                margin-bottom: 1.5rem;
+                line-height: 1.625;
+            }
+
+            .div1 ul, .div2 ul, .div3 ul, .div4 ul, .div5 ul, .div6 ul {
+                list-style-type: disc;
+                list-style-position: inside;
+                padding-left: 0;
+                margin-bottom: 1.5rem;
+                color: #0d9488;
+            }
+
+            .div1 li + li, .div2 li + li, .div3 li + li, .div4 li + li, .div5 li + li, .div6 li + li {
+                margin-top: 0.5rem;
+            }
+
+            .div1 img, .div3 img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 0.5rem;
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            }
+            .seccion1, .seccion2, .seccion3 {
+                margin-bottom: 1.5rem;
+            }
+            .seccion1 h2, .seccion2 h2, .seccion3 h2 {
+                font-size: 1.25rem;
+                color: #111827;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+            @media (min-width: 768px) {
+                .container h1 {
+                    font-size: 3rem;
+                }
+                .container2 {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .div2 {
+                    grid-column: span 2 / span 2;
+                }
+            }
+            @media (min-width: 1024px) {
+                .container2 {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "container">
+            <h1> BIENVENIDO A MI PÁGINA WEB </h1>
+        </div>
+        <div class = "container2">
+            <div class = "div1">
+                <h1>¿Que es Django?</h1>
+                <p>Django es un framework web de alto nivel, de código abierto y escrito en Python, que facilita el desarrollo rápido de aplicaciones web seguras y mantenibles. Se utiliza para construir sitios web y aplicaciones web, aprovechando la potencia de Python para simplificar tareas comunes y permitir a los desarrolladores concentrarse en la lógica de su aplicación. </p>
+                <img src = "https://elpythonista.com/wp-content/uploads/2020/10/Django.jpg" heigth = "500" width = "500">
+            </div>
+            <div class = "div2">
+                <h1>¿Por qué los desarrolladores web eligen Django?</h1>
+                <p>Hay varios marcos web en el mercado. Django se escribió en el lenguaje Python y es uno de los muchos marcos web de Python. Sin embargo, los desarrolladores a menudo prefieren el marco web Django a otros por las siguientes razones:</p>
+                <div class = "seccion1"> 
+                    <h2>Velocidad de desarrollo</h2>
+                    <p>El marco Django está bien organizado y es fácil de instalar y aprender, por lo que puede comenzar en cuestión de horas. Los diseñadores de Django crearon el marco para implementar rápidamente cualquier arquitectura web en el código. Permite el desarrollo rápido y el diseño limpio y pragmático. Puede escribir código en solo unas pocas líneas porque Django proporciona una estructura lista para usar para varias tareas comunes de desarrollo web, como:</p>
+                    <ul>
+                        <li>Autenticación de usuarios</li>
+                        <li>Enrutamiento de URL</li>
+                        <li>Interfaz de administración</li>
+                        <li>Pruebas</li>
+                </div>
+                <div class = "seccion2">
+                    <h2>Rentabilidad</h2>
+                    <p>Django es un proyecto de Python gratuito y de código abierto con una comunidad activa que revisa y mantiene el software. Una organización sin fines de lucro llamada Django Software Foundation promueve y respalda el uso y el mantenimiento de Django. Organiza encuentros, reuniones y eventos comunitarios regulares que animan a otros desarrolladores a revisar y contribuir al proyecto Django. El resultado es un marco web de alta calidad y rico en funciones que es de uso gratuito.</p>
+                </div>
+                <div class = "seccion3">
+                    <h2>Populares</h2>
+                    <p>Miles de proyectos de código abierto y sitios de alto perfil utilizan Django, tales como:</p>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Mozilla Firefox</li>
+                        <li>Pinterest</li>
+                        <li>National Geographic</li>
+                </div>
+            </div>
+            <div class = "div3">
+                <h1>¿Cuáles son las características de Django?</h1>
+                <p>Las características de Django incluyen:</p>
+                <ul>
+                    <li>Desarrollo rápido</li>
+                    <li>Escalabilidad</li>
+                    <li>Seguridad</li>
+                    <li>Flexibilidad</li>
+                    <li>Comunidad activa</li>
+                </ul>
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjvlmX9kZs5VuiqpPVqfaKeMFi6nhvVx5HTQ&s" heigth = "500" width = "500">
+            </div>
+            <div class = "div4">
+                <h1>Ventajas de Django</h1>
+                <p>Las ventajas de Django incluyen:</p>
+                <ul>
+                    <li>Desarrollo rápido y eficiente</li>
+                    <li>Gran comunidad y soporte</li>
+                    <li>Alta seguridad</li>
+                    <li>Escalabilidad para proyectos grandes</li>
+                    <li>Fácil integración con otras tecnologías</li>
+                </ul>
+            </div>
+            <div class = "div5">
+                <h1>Desventajas de Django</h1>
+                <p>Las desventajas de Django incluyen:</p>
+                <ul>
+                    <li>Curva de aprendizaje para principiantes</li>
+                    <li>Puede ser excesivo para proyectos pequeños</li>
+                    <li>Dependencia de Python</li>
+                    <li>Menos flexibilidad en comparación con otros frameworks</li>
+                </ul>
+            </div>
+            <div class = "div6">
+                <h1>Estructura </h1>
+                <p>La estructura de un proyecto Django típicamente incluye:</p>
+                <ul>
+                    <li>Carpeta del proyecto</li>
+                    <li>Aplicaciones Django</li>
+                    <li>Archivos de configuración</li>
+                    <li>Plantillas HTML</li>
+                    <li>Archivos estáticos (CSS, JavaScript, imágenes)</li>
+            </div>      
+        </div>
+    </body>
+</html>
