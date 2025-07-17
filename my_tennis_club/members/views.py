@@ -17,3 +17,7 @@ def details(request, id):
         'mymember': mymember,
     }
     return HttpResponse(template.render(cotext, request))
+
+def main(request):
+    template = loader.get_template('main.html')
+    return HttpResponse(template.render())
